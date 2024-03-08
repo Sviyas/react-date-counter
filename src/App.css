@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.counter,
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}
+
