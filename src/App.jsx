@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import './styles.css';
+import './App.css';
 import { useState } from 'react';
 
 export default function App() {
@@ -26,9 +26,13 @@ function Counter({ getStepsCounter = 1 }) {
   return (
     <>
       <div className='counter'>
-        <button onClick={decrementHandler}>-</button>
+        <button className='b1' onClick={decrementHandler}>
+          -
+        </button>
         <label htmlFor='counter'>{getDates}</label>
-        <button onClick={incrementHandler}>+</button>
+        <button className='b2' onClick={incrementHandler}>
+          +
+        </button>
       </div>
     </>
   );
@@ -47,9 +51,13 @@ function Steps() {
   return (
     <>
       <div className='steps'>
-        <button onClick={decreaseStep}>-</button>
+        <button className='b3' onClick={decreaseStep}>
+          -
+        </button>
         <p>The current step is : {steps}</p>
-        <button onClick={increaseStep}>+</button>
+        <button className='b4' onClick={increaseStep}>
+          +
+        </button>
       </div>
       <Counter getStepsCounter={steps} />
     </>
